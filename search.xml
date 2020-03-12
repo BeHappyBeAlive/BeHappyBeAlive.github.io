@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Missionaries_Cannibals</title>
+    <url>/2020/03/11/Missionaries-Cannibals/</url>
+    <content><![CDATA[<h1 id="⭐题目内容"><a href="#⭐题目内容" class="headerlink" title="⭐题目内容"></a>⭐题目内容</h1><p>  设在河的一岸有3个野人、3个修道士和一条船，修道士想用这条船把所有的人运到河对岸，但受以下条件的约束：<br>  第一，修道士和野人都会划船，但每次船上至多可载2个人；<br>  第二，在河的任一岸，如果野人数目超过修道士数，修道士就会被野人吃掉。<br>  如果野人会俯冲任何一次过河安排，请规划一个确保修道士和野人都能过河，且没有修道士被野人吃掉的安全过河计划</p>
+<a id="more"></a>
+
+<hr>
+<h2 id="🐞选取描述问题状态的方法"><a href="#🐞选取描述问题状态的方法" class="headerlink" title="🐞选取描述问题状态的方法"></a>🐞选取描述问题状态的方法</h2><pre><code>1. 两岸的修道士人数
+2. 两岸的野人数
+3. 船在哪一岸</code></pre><p>SO<br>    <code>S(m,c,b)</code></p>
+<blockquote>
+<p>m 表示左岸的修道士人数<br>c 表示左岸的野人数<br>b 表示船在左岸还是右岸</p>
+</blockquote>
+<p>可见 m和c 的取值可以为 0 —— 3 中任意一个<br>    b 可以取 0 或 1</p>
+<p>所以状态总数：    4 * 4 * 2 = 32</p>
+<h2 id="有效状态："><a href="#有效状态：" class="headerlink" title="有效状态："></a>有效状态：</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">S0(3,3,1)	S1(3,2,1)	S2(3,1,1)	S3(2,2,1)</span><br><span class="line">S4(1,1,1)	S5(0,3,1)	S6(0,2,1)	S7(0,1,1)</span><br><span class="line">S8(3,2,0)	S9(3,1,0)	S10(3,0,0)	S11(2,2,0)</span><br><span class="line">S12(1,1,0)	S13(0,2,0)	S14(0,1,0)	S15(0,0,0)</span><br></pre></td></tr></table></figure>
+
+<h2 id="过河操作"><a href="#过河操作" class="headerlink" title="过河操作"></a>过河操作</h2><p>  用船把修道士或野人从河的左岸运到右岸<br>  or<br>  用船把修道士或野人从河的右岸运到左岸</p>
+<hr>
+<p>  每个操作满足以下条件：</p>
+<ul>
+<li>船上至少有一个人操作，离开岸边的m和c的减少数目应该等于到达岸边的的m和c的增加数目</li>
+<li>每次操作船上人数不得超过2个</li>
+<li>操作应保证不产生非法状态</li>
+</ul>
+<h2 id="操作的表示"><a href="#操作的表示" class="headerlink" title="操作的表示"></a>操作的表示</h2><pre><code>Lij表示有i个修道士和j个野人，从左岸到右岸的操作
+Rij表示有i个修道士和j个野人，从右岸到左岸的操作</code></pre><h2 id="操作集"><a href="#操作集" class="headerlink" title="操作集"></a>操作集</h2><blockquote>
+<p>根据操作限制可以归纳出本问题的操作集，有10个<br>A = { L01 , L10 , L11 , L02 , L20 , R01 , R10 , R11 , R02 , R20 }<br>操作的例子</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>AI</category>
+      </categories>
+      <tags>
+        <tag>状态空间表示法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>first</title>
+    <url>/2020/03/11/first/</url>
+    <content><![CDATA[<h1 id="测试hexo"><a href="#测试hexo" class="headerlink" title="测试hexo"></a>测试hexo</h1><h2 id="第一篇文章"><a href="#第一篇文章" class="headerlink" title="第一篇文章"></a>第一篇文章</h2><a id="more"></a>
+
+<ul>
+<li>list1</li>
+<li>list2<br>  a 字列表1<br>  b 字列表2</li>
+</ul>
+<hr>
+<hr>
+<hr>
+<p><a href="https://www.baidu.com" target="_blank" rel="noopener">百度</a><br><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4163335250,2895819429&fm=11&gp=0.jpg" alt="图片"></p>
+<p><em>字体变斜</em><br><strong>字体加粗</strong></p>
+<p><code>&lt;html&gt;&lt;/html&gt;</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">social_icons:</span><br><span class="line">  enable: true</span><br><span class="line">  icons_only: true</span><br><span class="line">  transition: false</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>引用的内容</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>测试文章</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/02/11/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Hexo"><a href="#Quick-Hexo" class="headerlink" title="Quick Hexo"></a>Quick Hexo</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><a id="more"></a>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
