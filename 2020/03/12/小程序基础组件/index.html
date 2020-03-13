@@ -46,27 +46,32 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ZhuRui">
-<meta property="og:url" content="https://behappybealive.github.io/index.html">
+  <meta name="description" content="小程序的flex布局定义布局display:flexflex容器的属性：flex-direction：排列方向 row row-reverse column column-reverse  12345678910&#x2F;*index.wxml*&#x2F;&lt;!--index.wxml--&gt;&lt;view class&#x3D;&quot;container&quot;&gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="小程序基础组件">
+<meta property="og:url" content="https://behappybealive.github.io/2020/03/12/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%9F%BA%E7%A1%80%E7%BB%84%E4%BB%B6/index.html">
 <meta property="og:site_name" content="ZhuRui">
+<meta property="og:description" content="小程序的flex布局定义布局display:flexflex容器的属性：flex-direction：排列方向 row row-reverse column column-reverse  12345678910&#x2F;*index.wxml*&#x2F;&lt;!--index.wxml--&gt;&lt;view class&#x3D;&quot;container&quot;&gt;">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-12T10:22:02.000Z">
+<meta property="article:modified_time" content="2020-03-13T10:20:12.372Z">
 <meta property="article:author" content="Williams Ray">
+<meta property="article:tag" content="小程序">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://behappybealive.github.io/">
+<link rel="canonical" href="https://behappybealive.github.io/2020/03/12/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%9F%BA%E7%A1%80%E7%BB%84%E4%BB%B6/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false
+    isHome: false,
+    isPost: true
   };
 </script>
 
-  <title>ZhuRui</title>
+  <title>小程序基础组件 | ZhuRui</title>
   
 
 
@@ -172,10 +177,10 @@
             
 
   <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://behappybealive.github.io/2020/03/12/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%9F%BA%E7%A1%80%E7%BB%84%E4%BB%B6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -189,8 +194,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/12/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%9F%BA%E7%A1%80%E7%BB%84%E4%BB%B6/" class="post-title-link" itemprop="url">小程序基础组件</a>
+          小程序基础组件
         </h1>
 
         <div class="post-meta">
@@ -222,6 +226,13 @@
             </span>
 
           
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
   
   <span class="post-meta-item">
     
@@ -246,7 +257,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="小程序的flex布局"><a href="#小程序的flex布局" class="headerlink" title="小程序的flex布局"></a>小程序的flex布局</h1><h2 id="定义布局display-flex"><a href="#定义布局display-flex" class="headerlink" title="定义布局display:flex"></a>定义布局display:flex</h2><h3 id="flex容器的属性："><a href="#flex容器的属性：" class="headerlink" title="flex容器的属性："></a>flex容器的属性：</h3><h4 id="flex-direction：排列方向"><a href="#flex-direction：排列方向" class="headerlink" title="flex-direction：排列方向"></a>flex-direction：排列方向</h4><ul>
+        <h1 id="小程序的flex布局"><a href="#小程序的flex布局" class="headerlink" title="小程序的flex布局"></a>小程序的flex布局</h1><h2 id="定义布局display-flex"><a href="#定义布局display-flex" class="headerlink" title="定义布局display:flex"></a>定义布局display:flex</h2><h3 id="flex容器的属性："><a href="#flex容器的属性：" class="headerlink" title="flex容器的属性："></a>flex容器的属性：</h3><h4 id="flex-direction：排列方向"><a href="#flex-direction：排列方向" class="headerlink" title="flex-direction：排列方向"></a>flex-direction：排列方向</h4><ul>
 <li>row</li>
 <li>row-reverse</li>
 <li>column</li>
@@ -350,290 +361,69 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Page(&#123;</span><br><span class="line">  data:&#123;</span><br><span class="line">    array:[</span><br><span class="line">      &#123; id:&quot;1001&quot;,name: &quot;v中国&quot;, value: &quot;中国&quot;, checked: true, color: &quot;red&quot;, disable: false &#125;,</span><br><span class="line">      &#123; id: &quot;1002&quot;,name: &quot;v美国&quot;, value: &quot;美国&quot;, checked: true, color: &quot;pink&quot;, disable: false &#125;,</span><br><span class="line">      &#123; id: &quot;1003&quot;,name: &quot;v俄国&quot;, value: &quot;俄国&quot;, checked: true, color: &quot;blue&quot;, disable: false &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  changed:function(e)&#123;</span><br><span class="line">    &#x2F;&#x2F; debugger</span><br><span class="line">  &#125;, </span><br><span class="line">  formSubmit: function (e) &#123;</span><br><span class="line">     debugger</span><br><span class="line">  &#125;, </span><br><span class="line">  formReset: function (e) &#123;</span><br><span class="line">    console.log(&quot;数据已经被重置&quot;);</span><br><span class="line">    &#x2F;&#x2F; debugger</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
 
-      
     </div>
 
     
     
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+        <div class="reward-container">
+  <div>你可以给我打赏哟!</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="Williams Ray 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.jpg" alt="Williams Ray 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://behappybealive.github.io/2020/03/11/Missionaries-Cannibals/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="http://img.52z.com/upload/news/image/20180327/20180327063612_95651.jpg">
-      <meta itemprop="name" content="Williams Ray">
-      <meta itemprop="description" content="">
-    </span>
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZhuRui">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/11/Missionaries-Cannibals/" class="post-title-link" itemprop="url">Missionaries_Cannibals</a>
-        </h1>
+    <div class="social-list">
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-03-11 20:33:48" itemprop="dateCreated datePublished" datetime="2020-03-11T20:33:48+08:00">2020-03-11</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
+            <div class="social-item">
+              <a target="_blank" class="social-link" href="/images/wechatpng.png">
+                <span class="icon">
+                  <i class="fa fa-wechat"></i>
                 </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-12 10:06:46" itemprop="dateModified" datetime="2020-03-12T10:06:46+08:00">2020-03-12</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/AI/" itemprop="url" rel="index">
-                    <span itemprop="name">AI</span>
-                  </a>
-                </span>
-            </span>
 
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/03/11/Missionaries-Cannibals/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/11/Missionaries-Cannibals/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="⭐题目内容"><a href="#⭐题目内容" class="headerlink" title="⭐题目内容"></a>⭐题目内容</h1><p>  设在河的一岸有3个野人、3个修道士和一条船，修道士想用这条船把所有的人运到河对岸，但受以下条件的约束：<br>  第一，修道士和野人都会划船，但每次船上至多可载2个人；<br>  第二，在河的任一岸，如果野人数目超过修道士数，修道士就会被野人吃掉。<br>  如果野人会俯冲任何一次过河安排，请规划一个确保修道士和野人都能过河，且没有修道士被野人吃掉的安全过河计划</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/03/11/Missionaries-Cannibals/#more" rel="contents">
-                阅读全文 &raquo;
+                <span class="label">Wechat</span>
               </a>
             </div>
-          <!--/noindex-->
-        
-      
     </div>
+  </div>
 
-    
-    
-    
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" rel="tag"># 小程序</a>
+          </div>
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://behappybealive.github.io/2020/03/11/first/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="http://img.52z.com/upload/news/image/20180327/20180327063612_95651.jpg">
-      <meta itemprop="name" content="Williams Ray">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZhuRui">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/11/first/" class="post-title-link" itemprop="url">first</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-03-11 16:59:04 / 修改时间：17:57:45" itemprop="dateCreated datePublished" datetime="2020-03-11T16:59:04+08:00">2020-03-11</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" itemprop="url" rel="index">
-                    <span itemprop="name">测试文章</span>
-                  </a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/03/11/first/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/11/first/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="测试hexo"><a href="#测试hexo" class="headerlink" title="测试hexo"></a>测试hexo</h1><h2 id="第一篇文章"><a href="#第一篇文章" class="headerlink" title="第一篇文章"></a>第一篇文章</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/03/11/first/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/11/Missionaries-Cannibals/" rel="prev" title="Missionaries_Cannibals">
+      <i class="fa fa-chevron-left"></i> Missionaries_Cannibals
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://behappybealive.github.io/2020/02/11/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="http://img.52z.com/upload/news/image/20180327/20180327063612_95651.jpg">
-      <meta itemprop="name" content="Williams Ray">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZhuRui">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/11/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-02-11 18:09:29" itemprop="dateCreated datePublished" datetime="2020-02-11T18:09:29+08:00">2020-02-11</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-11 17:58:59" itemprop="dateModified" datetime="2020-03-11T17:58:59+08:00">2020-03-11</time>
-              </span>
-
-          
-  
-  <span class="post-meta-item">
     
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/02/11/hello-world/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/02/11/hello-world/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Hexo"><a href="#Quick-Hexo" class="headerlink" title="Quick Hexo"></a>Quick Hexo</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/02/11/hello-world/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
   </article>
   
   
@@ -641,12 +431,10 @@
 
   </div>
 
-  
-
-
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -693,6 +481,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#小程序的flex布局"><span class="nav-number">1.</span> <span class="nav-text">小程序的flex布局</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义布局display-flex"><span class="nav-number">1.1.</span> <span class="nav-text">定义布局display:flex</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#flex容器的属性："><span class="nav-number">1.1.1.</span> <span class="nav-text">flex容器的属性：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#flex-direction：排列方向"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">flex-direction：排列方向</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#flex-wrap：换行规则"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">flex-wrap：换行规则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#justify-content：对齐方式"><span class="nav-number">1.1.1.3.</span> <span class="nav-text">justify-content：对齐方式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#flex容器成员的属性"><span class="nav-number">1.1.2.</span> <span class="nav-text">flex容器成员的属性</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#小程序的组件"><span class="nav-number">2.</span> <span class="nav-text">小程序的组件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#组件"><span class="nav-number">2.1.</span> <span class="nav-text">组件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#视图组件"><span class="nav-number">2.2.</span> <span class="nav-text">视图组件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#view组件"><span class="nav-number">2.2.1.</span> <span class="nav-text">view组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#scroll-view组件"><span class="nav-number">2.2.2.</span> <span class="nav-text">scroll-view组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#swiper组件"><span class="nav-number">2.2.3.</span> <span class="nav-text">swiper组件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#轮播图"><span class="nav-number">2.2.3.1.</span> <span class="nav-text">轮播图</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#movale-area-和-movable-view"><span class="nav-number">2.2.4.</span> <span class="nav-text">movale-area 和 movable-view</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基础组件"><span class="nav-number">2.3.</span> <span class="nav-text">基础组件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#icon图标组件"><span class="nav-number">2.3.1.</span> <span class="nav-text">icon图标组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rich-text富文本组件"><span class="nav-number">2.3.2.</span> <span class="nav-text">rich-text富文本组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#text文本组件"><span class="nav-number">2.3.3.</span> <span class="nav-text">text文本组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#progress进度条组件"><span class="nav-number">2.3.4.</span> <span class="nav-text">progress进度条组件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表单组件"><span class="nav-number">2.4.</span> <span class="nav-text">表单组件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#button"><span class="nav-number">2.4.1.</span> <span class="nav-text">button</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#checkbox"><span class="nav-number">2.4.2.</span> <span class="nav-text">checkbox</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#form"><span class="nav-number">2.4.3.</span> <span class="nav-text">form</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
