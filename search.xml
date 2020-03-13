@@ -9,6 +9,9 @@
 <li>column</li>
 <li>column-reverse</li>
 </ul>
+<a id="more"></a>
+
+
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;*index.wxml*&#x2F;</span><br><span class="line">&lt;!--index.wxml--&gt;</span><br><span class="line">&lt;view class&#x3D;&quot;container&quot;&gt;</span><br><span class="line">  &lt;view class&#x3D;&#39;a size&#39;&gt;a&lt;&#x2F;view&gt;</span><br><span class="line">  &lt;view class&#x3D;&#39;b size&#39;&gt;b&lt;&#x2F;view&gt;</span><br><span class="line">  &lt;view class&#x3D;&#39;c size&#39;&gt;c&lt;&#x2F;view&gt;</span><br><span class="line">  &lt;view class&#x3D;&#39;d size&#39;&gt;d&lt;&#x2F;view&gt;</span><br><span class="line">  &lt;view class&#x3D;&#39;e size&#39;&gt;e&lt;&#x2F;view&gt;</span><br><span class="line">  &lt;view class&#x3D;&#39;f size&#39;&gt;f&lt;&#x2F;view&gt;</span><br><span class="line">&lt;&#x2F;view&gt;</span><br></pre></td></tr></table></figure>
 
 
